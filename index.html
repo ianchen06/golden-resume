@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Generator App</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .parallax-section {
+      background-image: url('resume.png');
+      height: 100vh;
+      /* Adjust the height to be full viewport height for better responsiveness */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: start;
+      color: white;
+      /* Ensure text is visible on your background */
+    }
+
+    /* Additional styles */
+    .parallax-title {
+      font-size: 2.5em;
+      /* Large text for the title */
+      font-weight: bold;
+      margin-bottom: 0.5em;
+      /* Space between title and subtitle */
+    }
+
+    .parallax-subtitle {
+      font-size: 1.5em;
+      /* Smaller text for the subtitle */
+      margin-bottom: 1em;
+      /* Space between subtitle and button */
+    }
+
+    .parallax-btn {
+      font-size: 1em;
+      padding: 0.75em 1.5em;
+      color: white;
+      background-color: #007bff;
+      /* Bootstrap primary color */
+      border: none;
+      border-radius: 0.3em;
+      text-transform: uppercase;
+      text-decoration: none;
+      /* Remove underline from links styled as buttons */
+      transition: background-color 0.3s ease;
+    }
+
+    .parallax-btn:hover,
+    .parallax-btn:focus {
+      background-color: #0056b3;
+      /* Darker shade for hover/focus */
+      color: white;
+      text-decoration: none;
+      /* Ensure no underline on hover/focus */
+    }
+
+    .testimonial-section {
+      background-color: #f8f9fa;
+      padding: 40px 0;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .trusted-by-section img {
+      opacity: 0.8;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .trusted-by-section img:hover {
+      opacity: 1;
+    }
+
+    .contact-form-section {
+      background-color: #f9f9f9;
+      /* Light background for the form section */
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Resume Generator</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="parallax-section d-flex align-items-center">
+    <div>
+      <h1 class="parallax-title">Resume Generator App</h1>
+      <p class="parallax-subtitle">Create your professional resume in minutes.</p>
+      <a href="#demo" class="btn parallax-btn">Try It Now</a>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center">See it in Action</h2>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="video2.mp4" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="testimonial-section">
+    <div class="container">
+      <h2 class="text-center mb-5">What Our Users Say</h2>
+      <div class="row">
+        <!-- Testimonial 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text">"This resume generator has been a game changer for my career. Easy to use and the
+                results are professional!"</p>
+              <p class="blockquote-footer">Jane Doe, <cite title="Source Title">Product Manager</cite></p>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text">"Absolutely love this app! It helped me create a resume that stands out and landed me
+                interviews."</p>
+              <p class="blockquote-footer">John Smith, <cite title="Source Title">Software Developer</cite></p>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text">"Highly recommend for anyone looking to upgrade their resume with minimal effort.
+                Fantastic tool!"</p>
+              <p class="blockquote-footer">Emily White, <cite title="Source Title">Graphic Designer</cite></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="trusted-by-section bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Powered by</h2>
+      <div class="row justify-content-center">
+        <!-- Example Company Logo -->
+        <div class="col-md-2 col-6 mb-4 text-center">
+          <img src="trusted.jpeg" alt="Company 1 Logo" class="img-fluid">
+          <h4>Credo Labs</h4>
+        </div>
+        <!-- Add more logos here, following the above structure -->
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-form-section bg-white py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="container">
+      <p>© 2024 Resume Generator App. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.5/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
