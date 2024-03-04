@@ -1,16 +1,20 @@
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('refineBtn').addEventListener('click', refineBulletPoint);
+document.getElementById('submitBtn').addEventListener('click', function() {
+    var resumeText = document.getElementById('resumeText').value;
+    if(resumeText.trim() === '') {
+        alert('Please paste your resume in the text area.');
+        return;
+    }
+
+    // Static suggestions for demonstration
+    var suggestions = `
+        <h2>Suggestions</h2>
+        <ul>
+            <li>Use action verbs to describe your job responsibilities.</li>
+            <li>Quantify your achievements with numbers when possible.</li>
+            <li>Keep your resume to one page if you have less than 10 years of experience.</li>
+            <li>Customize your resume for the job you're applying to.</li>
+        </ul>
+    `;
+
+    document.getElementById('suggestions').innerHTML = suggestions;
 });
-
-function refineBulletPoint() {
-    const input = document.getElementById('bulletPointInput').value;
-    // Simulate a call to transformers.js API for refining the input
-    const refined = fakeRefine(input); // Replace this with actual API call
-    document.getElementById('refinedOutput').textContent = refined;
-}
-
-// Placeholder for the refinement function
-function fakeRefine(input) {
-    // Implement a simple transformation logic for demonstration
-    return input + " [Refined]";
-}

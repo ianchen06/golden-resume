@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Bullet Point Refiner</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Resume Reviewer</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1 class="my-4">Refine Your Resume Bullet Points</h1>
-        <div>
-            <div class="mb-3">
-                <label for="bulletPointInput" class="form-label">Enter a bullet point from your resume:</label>
-                <textarea class="form-control" id="bulletPointInput" rows="3"></textarea>
-            </div>
-            <button id="refineBtn" class="btn btn-primary">Refine</button>
+        <h1 class="mt-5">Resume Reviewer</h1>
+        <div class="form-group">
+            <label for="resumeText">Paste Your Resume Here:</label>
+            <textarea class="form-control" id="resumeText" rows="10"></textarea>
         </div>
-        <div class="mt-4">
-            <h2>Refined Bullet Point</h2>
-            <p id="refinedOutput"></p>
+        <button id="submitBtn" class="btn btn-primary">Get Suggestions</button>
+        <div id="suggestions" class="mt-4">
+            <!-- Suggestions will be displayed here -->
         </div>
     </div>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="app.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.5/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="app.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>
