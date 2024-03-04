@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Bullet Point Refiner</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Refine Your Resume Bullet Points</h1>
+        <div>
+            <div class="mb-3">
+                <label for="bulletPointInput" class="form-label">Enter a bullet point from your resume:</label>
+                <textarea class="form-control" id="bulletPointInput" rows="3"></textarea>
+            </div>
+            <button id="refineBtn" class="btn btn-primary">Refine</button>
+        </div>
+        <div class="mt-4">
+            <h2>Refined Bullet Point</h2>
+            <p id="refinedOutput"></p>
+        </div>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
