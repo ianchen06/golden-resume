@@ -8,7 +8,6 @@ document.getElementById('submitBtn').addEventListener('click', function() {
     // Static suggestions for demonstration
     var suggestions = `
         <h2>Suggestions</h2>
-        <--! display a score of the resume -->
         <p>Score: 90%</p>
         <ul>
             <li>Use action verbs to describe your job responsibilities.</li>
