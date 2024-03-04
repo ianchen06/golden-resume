@@ -14,6 +14,8 @@ document.getElementById('submitBtn').addEventListener('click', function() {
             <li>Keep your resume to one page if you have less than 10 years of experience.</li>
             <li>Customize your resume for the job you're applying to.</li>
         </ul>
+
+        <img src="/golden_resume.webp" alt="Suggestion Image" />
     `;
 
     document.getElementById('suggestions').innerHTML = suggestions;
